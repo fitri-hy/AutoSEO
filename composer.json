@@ -1,0 +1,25 @@
+{
+  "name": "fhylabs/autoseo",
+  "description": "AutoSEO Engine for Laravel",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "AutoSEO\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "AutoSEO\\SeoServiceProvider"
+      ],
+      "aliases": {
+        "Seo": "AutoSEO\\Facades\\Seo"
+      }
+    }
+  },
+  "require": {
+    "php": "^8.0",
+    "illuminate/support": "^12.0"
+  }
+}
